@@ -1,0 +1,84 @@
+<html>
+<head>
+    <title>fessyben</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main">  
+    <nav>
+    <div class="logo">
+        <img src="MUTIE FESTUS MUSILI.jpg"> </div>
+        <div class="nav-links">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">My Projects list</a></li>
+            <li><a href="#">Hire me</a></li>
+            <li><a href="#">Let's Chat</a></li>
+        </ul>
+        </div>
+      </nav>
+      <div class="marquee">
+      <p> Thanks for visiting us,,, make your discounted order via 0717111749 or email through "fessycompass@gmail.com" and enjoy upto 70% discount!!!</p></div>
+<div class="information">
+    <div class="overlay"></div>
+    <img src="web.jpeg" class="mobile">
+  <div id="circle"> 
+      
+    <div class="feature one">
+        <div>
+        <h1>Other Services</h1>
+            <p>we offer MC services at all events!</p>
+        </div>
+      </div>
+      
+      <div class="feature two">
+      <div>
+        <h1>Laboratory</h1>
+            <p>Conduct us for any desktop or laptop repairs</p>
+        </div>
+      </div>
+      
+      <div class="feature three">
+      <div>
+        <h1>web development</h1>
+            <p>we build a responsive and a state-of-art website.<br>try us today!</p>
+        </div>
+      </div>
+      
+      <div class="feature four">
+          <div>
+        <h1>MIS</h1>
+            <p>we use high-level pragramming languages<br> to build a user friendly DBMS.</p>
+        </div>
+      </div>
+    </div>    
+      </div>
+      <div class="controls"><img src="images.jpg" id="UpBtn"><H3>For Features about us use these 2 buttons</H3>
+          <img src="download.jpg" id="DnBtn">
+      </div>
+    
+    </div>
+    <script>
+    
+    var circle = document.getElementById("circle");
+    var UpBtn = document.getElementById("UpBtn");
+    var DnBtn = document.getElementById("DnBtn");
+    
+    var rotateValue = circle.style.transform;
+    var rotateSum;
+        
+        UpBtn.onclick = function(){
+           rotateSum = rotateValue + "rotate(-90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        } 
+        
+        DnBtn.onclick = function(){
+           rotateSum = rotateValue + "rotate(90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+        
+    </script>
+</body>
+</html>
